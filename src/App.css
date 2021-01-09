@@ -22,3 +22,7 @@
     background-size: cover;
     background-color: var(--primary-red);
 }
+
+.price-alert {
+    background-color: var(--accent-blue)
+}

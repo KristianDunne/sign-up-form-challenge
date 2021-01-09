@@ -11,6 +11,11 @@ function App() {
         scripted tutorials is great, but understanding how developers think is
         invaluable.
       </div>
+      <div className="py-3 text-sm leading-loose text-center rounded-lg shadow-xl mt-14 price-alert ">
+        <span className="text-sm font-bold">Try it free 7 days</span> then
+        <br />
+        $20/mo. thereafter
+      </div>
     </div>
   );
 }
