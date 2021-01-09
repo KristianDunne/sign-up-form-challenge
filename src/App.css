@@ -23,3 +23,10 @@
     background-size: cover;
     overflow: auto;
 }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .app {
+            background-image: url("./images/bg-intro-desktop.png");
+        }
+    }
