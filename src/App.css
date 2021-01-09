@@ -20,9 +20,5 @@
 .app {
     background-image: url("./images/bg-intro-mobile.png");
     background-size: cover;
-    background-color: var(--primary-red);
-}
-
-.price-alert {
-    background-color: var(--accent-blue)
+    overflow: auto;
 }
