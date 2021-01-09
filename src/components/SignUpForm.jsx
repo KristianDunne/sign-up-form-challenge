@@ -113,7 +113,7 @@ export default function SignUpForm() {
         />
         <button
           type="submit"
-          className="py-4 text-sm tracking-wide text-gray-100 uppercase rounded-lg shadow-xl lg:text-base bg-primary-green hover:bg-opacity-75"
+          className="py-4 text-sm tracking-wide text-gray-100 uppercase rounded-lg shadow-xl outline-none lg:text-base bg-primary-green hover:bg-opacity-75 focus:outline-none "
         >
           Claim your free trial
         </button>
