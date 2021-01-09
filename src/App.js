@@ -1,4 +1,5 @@
 import './App.css';
+import SignUpFrom from './components/SignUpForm';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <br />
         $20/mo. thereafter
       </div>
+      <SignUpFrom />
     </div>
   );
 }
