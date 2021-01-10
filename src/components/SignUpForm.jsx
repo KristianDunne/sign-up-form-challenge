@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-props-no-spreading */
 // eslint-disable-next-line object-curly-newline
 import { Formik, Field, Form, ErrorMessage } from 'formik';
@@ -29,17 +30,28 @@ export default function SignUpForm() {
       <Form className="flex flex-col p-0 p-5 mt-5 space-y-4 text-black bg-white rounded-lg shadow-xl lg:p-10 lg:space-y-6">
         <Field name="firstName">
           {({ field, form }) => (
-            <input
-              {...field}
-              className="p-4 font-semibold placeholder-gray-500 border rounded-lg outline-none lg:px-8 focus:ring-accent-blue focus:ring-1"
-              placeholder="First Name"
-              type="text"
-              style={
-                form.touched.firstName && form.errors.firstName
-                  ? { border: '2px solid var(--primary-red)' }
-                  : null
-              }
-            />
+            <>
+              <label
+                htmlFor="firstName"
+                aria-label="First Name"
+                className="hidden"
+              >
+                First Name
+              </label>
+              <input
+                {...field}
+                className="p-4 font-semibold placeholder-gray-500 border rounded-lg outline-none lg:px-8 focus:ring-accent-blue focus:ring-1"
+                placeholder="First Name"
+                type="text"
+                name="firstName"
+                id="firstName"
+                style={
+                  form.touched.firstName && form.errors.firstName
+                    ? { border: '2px solid var(--primary-red)' }
+                    : null
+                }
+              />
+            </>
           )}
         </Field>
         <ErrorMessage
@@ -50,17 +62,28 @@ export default function SignUpForm() {
         />
         <Field name="lastName">
           {({ field, form }) => (
-            <input
-              {...field}
-              className="p-4 font-semibold placeholder-gray-500 border rounded-lg outline-none lg:px-8 focus:ring-accent-blue focus:ring-1"
-              placeholder="Last Name"
-              type="text"
-              style={
-                form.touched.lastName && form.errors.lastName
-                  ? { border: '2px solid var(--primary-red)' }
-                  : null
-              }
-            />
+            <>
+              <label
+                htmlFor="lastName"
+                aria-label="Last Name"
+                className="hidden"
+              >
+                Last Name
+              </label>
+              <input
+                {...field}
+                className="p-4 font-semibold placeholder-gray-500 border rounded-lg outline-none lg:px-8 focus:ring-accent-blue focus:ring-1"
+                placeholder="Last Name"
+                type="text"
+                name="lastName"
+                id="lastName"
+                style={
+                  form.touched.lastName && form.errors.lastName
+                    ? { border: '2px solid var(--primary-red)' }
+                    : null
+                }
+              />
+            </>
           )}
         </Field>
         <ErrorMessage
@@ -71,17 +94,24 @@ export default function SignUpForm() {
         />
         <Field name="email">
           {({ field, form }) => (
-            <input
-              {...field}
-              className="p-4 font-semibold placeholder-gray-500 border rounded-lg outline-none lg:px-8 focus:ring-accent-blue focus:ring-1"
-              placeholder="Email"
-              type="text"
-              style={
-                form.touched.email && form.errors.email
-                  ? { border: '2px solid var(--primary-red)' }
-                  : null
-              }
-            />
+            <>
+              <label htmlFor="email" aria-label="Email" className="hidden">
+                Email
+              </label>
+              <input
+                {...field}
+                className="p-4 font-semibold placeholder-gray-500 border rounded-lg outline-none lg:px-8 focus:ring-accent-blue focus:ring-1"
+                placeholder="Email"
+                type="text"
+                name="email"
+                id="email"
+                style={
+                  form.touched.email && form.errors.email
+                    ? { border: '2px solid var(--primary-red)' }
+                    : null
+                }
+              />
+            </>
           )}
         </Field>
         <ErrorMessage
@@ -92,17 +122,28 @@ export default function SignUpForm() {
         />
         <Field name="password">
           {({ field, form }) => (
-            <input
-              {...field}
-              className="p-4 font-semibold placeholder-gray-500 border rounded-lg outline-none lg:px-8 focus:ring-accent-blue focus:ring-1"
-              placeholder="Password"
-              type="password"
-              style={
-                form.touched.password && form.errors.password
-                  ? { border: '2px solid var(--primary-red)' }
-                  : null
-              }
-            />
+            <>
+              <label
+                htmlFor="password"
+                aria-label="Password"
+                className="hidden"
+              >
+                Password
+              </label>
+              <input
+                {...field}
+                className="p-4 font-semibold placeholder-gray-500 border rounded-lg outline-none lg:px-8 focus:ring-accent-blue focus:ring-1"
+                placeholder="Password"
+                type="password"
+                name="password"
+                id="password"
+                style={
+                  form.touched.password && form.errors.password
+                    ? { border: '2px solid var(--primary-red)' }
+                    : null
+                }
+              />
+            </>
           )}
         </Field>
         <ErrorMessage
